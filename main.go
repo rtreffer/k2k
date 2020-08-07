@@ -53,7 +53,7 @@ func jsonify(meta clientMetadata) stringify {
 			`"facility":"` + msg.facility + `",` +
 			`"severity":"` + msg.severity + `",` +
 			`"message":"` + strings.ReplaceAll(msg.message, `"`, `\"`) + `",` +
-			`"timestamp":"` + string(timestamp) + `"` +
+			`"timestamp":` + string(timestamp) +
 			metadata +
 			suffix
 	}
